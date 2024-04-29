@@ -36,49 +36,6 @@ RegisterNumber:  212222230026
 
 ## MainActivity.java:
 ```java
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Ex07"
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
-```
-
-## activity_main.xml:
-```java
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ImageView"/>
-</RelativeLayout>
-```
-
-## AndroidMainfest.xml
-```java
 package com.example.ex07;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -115,8 +72,51 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
 ```
 
+## activity_main.xml:
+```java
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ImageView"/>
+</RelativeLayout>
+```
+## AndroidMainfest.xml
+```java
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex07"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+```
 ## Output:
 
 ![Screenshot 2024-04-25 084040](https://github.com/chandrumathiyazhagan/EX_7_GRAPHICAL_GIT/assets/119393023/cd67b16e-0396-4a21-a07a-f39ae713d156)
